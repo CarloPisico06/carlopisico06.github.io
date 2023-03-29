@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Source Market</title>
     <link rel="shortcut icon" type="image" href="./image/Arts-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -27,11 +27,19 @@
     <!-- animation links -->
 </head>
 <body>
+    <div class="top-navbar">
+        <p>WELCOME TO OUR SHOP</p>
+        <div class="icons">
+            <a href="login.html"><img src="./images/register.png" alt="" width="18px">Login</a>
+            <a href="register.html"><img src="./images/register.png" alt="" width="18px">Register</a>
+        </div>
+    </div>
+    <!-- top navbar -->
     <div class="all-content">
         <!-- navbar -->
         <nav class="navbar navbar-expand-md" id="navbar">
             <!-- Brand -->
-            <a class="navbar-brand" href="#" id="logo"><img src="./image/Arts-logo.png" alt="" width="100px">Art Source Market</a>
+            <a class="navbar-brand" href="#" id="logo"><img src="./image/Arts-logo.png" alt="" width="50px">Art Source Market</a>
           
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -84,13 +92,13 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">ABOUT US</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">LOG IN/REGISTER</a>
-                </li>
               </ul>
             </div>
+            <form class="d-flex" id="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
             <div class="icons">
-                <img src="./image/user.png" alt="" width="20px">
                 <img src="./image/heart.png" alt="" width="20px">
                 <img src="./image/add.png" alt="" width="24px">
             </div>
@@ -131,7 +139,6 @@
                 <p>Enjoy discovering different kinds of artworks from this shop.
                     <br>Make your own account and sell your own artworks.
                 </p>
-               
             </div>
             <div class="img"  data-aos="zoom-out-left">
                 <img src="./image/art-material.png" alt="">
@@ -142,11 +149,8 @@
       <!-- top cards -->
         <div class="container">
          <br> <h1>Shop original art from independent</h1>
-               <h1>artist around the world</h1>
-             
-      
-        
-      </div>
+               <h1>artist around the world</h1>        
+       </div>
       
       <!-- top cards end -->
 
@@ -171,100 +175,50 @@
         <div class="container">
             <h1>Shop by Category</h1>
             <div class="row" style="margin-top:50px;">
+                <div class="owl-carousel owl-theme">
                <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                    </div>
-                    <img src="./image/painting2.png"  alt="">
-                    <div class="card-body">
+                    <img src="./image/paingting2.jpg"  alt="">
+                    <div class="card-body" >
                         <h3>Paintings</h3>
-                        <div class="">
-                          <i class=""></i>
-                          <i class="bx "></i>
-                          <i class=""></i>
-                          <i class=""></i>
-                          <i class=" "></i>
-                        </div>
                         <p>Let your walls do the talking with an original painting from one of the world's most talented independent painters.</p>
-                        <h6> <span><button>View All</button></span></h6>
-                    </div>
-                </div>
-               </div>
-               <div class="col-md-3 py-3 py-md-0">
-                <div class="card">
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                    </div>
-                    <img src="./image/printmakingp.png" height="190px" width="250px" alt="">
-                    <div class="card-body">
-                        <h3>Printmaking</h3>
-                        <div class="star">
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star "></i>
-                          <i class="bx bxs-star "></i>
-                        </div>
-                        <p>You'll only find the finest handmade art prints on Art source market. Limited editions only, and not a poster in sight.</p>
                         <h6><span><button>View All</button></span></h6>
                     </div>
                 </div>
                </div>
                <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
-                    </div>
-                    <img src="./image/photography.jpg" height="190px" alt="">
+                    <img src="./image/printmaking2.jpg" height="170px"alt="">
                     <div class="card-body">
-                        <h3>Photography</h3>
-                        <div class="star">
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star "></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <h6><span><button>Add Cart</button></span></h6>
+                        <h3>Printmaking</h3>
+                        <p>You'll only find the finest handmade art prints on Artfinder. Limited editions only, and not a poster in sight.</p>
+                        <h6><span><button>View</button></span></h6>
                     </div>
                 </div>
                </div>
                <div class="col-md-3 py-3 py-md-0">
                 <div class="card">
-                    <div class="overlay">
-                        <button type="button" class="btn btn-secondary" title="Quick View"><i><img src="./image/views.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i><img src="./image/heart.png" alt="" width="30px"></i></button>
-                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i><img src="./image/add.png" alt="" width="30px"></i></button>
+                    <img src="./image/photography.jpg" height="170px" alt="">
+                    <div class="card-body">
+                        <h3>Photography</h3>
+                        <p>Buying signed editions is a great way to start collecting from a photographer you love.</p>
+                        <br>
+                        <h6><span><button>View All</button></span></h6>
                     </div>
-                    <img src="./image/sculpture.jpg" height="190px"  alt="">
+                </div>
+               </div>
+               <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/sculpture.jpg" height="170px"  alt="">
                     <div class="card-body">
                         <h3>Sculptures</h3>
-                        <div class="star">
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                          <i class="bx bxs-star checked"></i>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <h6><span><button>Add Cart</button></span></h6>
+                        <p>Discover and buy original sculptures directly from independent artists.</p>
+                        <br>
+                        <h6><span><button>View All</button></span></h6>
                     </div>
                 </div>
                </div>
             </div>
-
-
-
-
-
 
             <div class="row" style="margin-top:50px;"    data-aos="fade-up"
             data-aos-duration="1500">
@@ -286,7 +240,7 @@
                            <i class="bx bxs-star "></i>
                          </div>
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                         <h6> <span><button>Add Cart</button></span></h6>
+                         <h6>$10.5 <span><button>Add Cart</button></span></h6>
                      </div>
                  </div>
                 </div>
@@ -308,7 +262,7 @@
                            <i class="bx bxs-star "></i>
                          </div>
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                         <h6> <span><button>Add Cart</button></span></h6>
+                         <h6>$15.5 <span><button>Add Cart</button></span></h6>
                      </div>
                  </div>
                 </div>
@@ -330,7 +284,7 @@
                            <i class="bx bxs-star "></i>
                          </div>
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                         <h6> <span><button>Add Cart</button></span></h6>
+                         <h6>$200.10 <span><button>Add Cart</button></span></h6>
                      </div>
                  </div>
                 </div>
@@ -352,7 +306,7 @@
                            <i class="bx bxs-star checked"></i>
                          </div>
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                         <h6><span><button>Add Cart</button></span></h6>
+                         <h6>$30.20 <span><button>Add Cart</button></span></h6>
                      </div>
                  </div>
                 </div>
@@ -444,83 +398,91 @@
       </section>
       <!-- popular artists-->
 
-
-
-      <!-- about -->
-      <div class="container" id="about"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <h1>ABOUT US</h1>
-        <div class="row">
-            <div class="col-md-6 py-3 py-md-0">
-                <div class="card">
-                    <img src="./image/Arts-logo.png" alt="">
+         <!-- footer -->
+    <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>Art Source Market</h3>
+                <p>
+                  About Us<br>
+                  Our Artists <br>
+                  Art Source Market Trade <br>
+                  Contact Us<br>
+                  Common Searches<br>
+                  Blogs<br>
+                  Careers<br>
+                </p>
+                 
+              </div>
+  
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>For Buyers</h4>
+               <ul>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Returns & Refunds</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Personal Shopping</a></li>
+                <li><a href="#">Invite Friends</a></li>
+                <li><a href="#">Buy a Gift Card</a></li>
+                <li><a href="#">Redeem a Gift Card</a></li>
+                <li><a href="#">Your Account Settings</a></li>
+                <li><a href="#">Commission an Artwork</a></li>
+                <li><a href="#">Returns & Refunds</a></li>
+               </ul>
+              </div>
+  
+  
+  
+             
+  
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>For Artists</h4>
+  
+               <ul>
+                <li><a href="#">Why Sell on Art Source Market?</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Seller Support</a></li>
+                <li><a href="#">Apply to Sell</a></li>
+                <li><a href="#">How to Sell Art Online</a></li>
+               </ul>
+              </div>
+  
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Social Networks</h4>
+                <div class="socail-links mt-3">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-skype"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
+              
+              </div>
+  
             </div>
-            <div class="col-md-6 py-3 py-md-0">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias explicabo nulla dicta perferendis cupiditate autem assumenda unde fugit? Corrupti ipsa fugiat similique voluptate temporibus, cupiditate cumque iusto? Necessitatibus suscipit qui molestias odit ad aspernatur harum aliquid ipsam nisi, culpa quae, magnam dolores cupiditate velit exercitationem ratione deleniti dignissimos labore quia esse ea quos consequuntur perferendis aliquam. Est assumenda doloremque nobis, tenetur fuga similique eligendi nihil non officia possimus aliquid animi nisi ipsum qui veritatis repellat harum accusamus odit iusto laudantium voluptatum ipsa ut fugit veniam. Voluptates sint molestiae officia consequuntur iure repudiandae autem reiciendis, perspiciatis veritatis soluta quia velit necessitatibus.</p>                
-
-                <div id="bt"><button>Read More...</button></div>
-            </div>
+          </div>
         </div>
-      </div>
-      <!-- about -->
-
-
-      <!-- contact  -->
-      <div class="container" id="contact"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <h1>CONTACT US</h1>
-        <div class="row">
-            <div class="col-md-4 py-1 py-md-0">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="usr" placeholder="Name">
-                </div>
-            </div>
-            <div class="col-md-4 py-1 py-md-0">
-                <div class="form-group">
-                    <input type="email" class="form-control" id="eml" placeholder="Email">
-                </div>
-            </div>
-            <div class="col-md-4 py-1 py-md-0">
-                <div class="form-group">
-                    <input type="number" class="form-control" id="phn" placeholder="Phone">
-                </div>
-            </div>
-            
+        <hr>
+        <div class="container py-4">
+          <div class="copyright">
+            &copy; Copyright <strong><span>2023 Art Source Market</span></strong>. All Rights Reserved 
+          </div>
+          <div class="credits">
+            Designed by <a href="#">Carlo Pisico student of Kodego</a>
+          </div>
         </div>
-        <div class="form-group">
-            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
-        </div>
-        <div id="messagebtn"><button>Send Message</button></div>
-      </div>
-      <!-- contact end -->
-
-
-      <!-- footer -->
-      <footer id="footer"    data-aos="fade-up"
-      data-aos-duration="1500">
-        <h1 class="text-center">Art Source Market</h1>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, accusantium.</p>
-        <div class="icons text-center">
-            <i class="bx bxl-twitter"></i>
-            <i class="bx bxl-facebook"></i>
-            <i class="bx bxl-google"></i>
-            <i class="bx bxl-skype"></i>
-            <i class="bx bxl-instagram"></i>
-        </div>
-        <div class="copyright text-center">
-            &copy; Copyright <strong>Art Source Market 2023</strong> .All Rights Reserved
-        </div>
-     
-       
       </footer>
-      <!-- footer -->
+
 
       <a href="#" class="arrow"><i><img src="./image/up-arrow.png" alt="" width="50px"></i></a>
 
 
 
     </div>
+
 
 
 
