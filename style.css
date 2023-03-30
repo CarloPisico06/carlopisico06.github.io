@@ -211,6 +211,33 @@
     }
 }
 /* home section end */
+/* offer */
+#offer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position:static
+}
+#offer i{
+    font-size: 32px;
+    color: black;
+    
+}
+/* offer */
+
+#container{
+    background-color: rgb(137, 179, 226);
+    min-height: 300px;
+    position: relative;
+}
+
+.container-text{
+    color: rgb(20, 1, 1);
+    position: absolute;
+    right:30%;
+    top: 30%;
+    text-align: center;
+}
+
 
 /* top cards */
 #box{
@@ -335,7 +362,7 @@
      color: yellow;
 }
 #product-cards p{
-    color: #f3f1ef;
+    color: #0c0601;
     font-weight: bold;
 }
 #product-cards h6{
