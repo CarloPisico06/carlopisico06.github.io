@@ -150,20 +150,18 @@
     margin-left: 60px;
 }
 .content h3{
-    color: white;
+    color: rgb(20, 20, 20);
     font-size: 60px;
     font-weight: bold;
-    text-shadow: 1px 1px 1px black;
 }
 .content h2{
     font-size: 60px;
-    color: white;
-    text-shadow: 1px 1px 1px black;
+    color: rgb(7, 7, 7);
     font-weight: bold;
 }
 .changecontent::after{
     content: ' ';
-    color: rgb(33, 6, 109);
+    color: rgb(107, 109, 6);
     animation: changetext 10s infinite linear;
     font-weight: bold;
 }
