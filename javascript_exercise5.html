@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Javascript Exercise 5</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Invoice Details</h1>
+    <div class="text">
+        <p><strong>Invoice To: Juan Dela Cruz<br>
+        Address:810 Oroquieta Street Sta. Cruz 1000,Manila,Metro Manila,Philippines<br>
+        Payment Mode:COD</p>
+    </div>
+    <div class="text2">
+    <p>Date: 2023-04-15<br>
+    Invoice#: 0000006845</p>
+    </div>
+    <table>
+          <thead>
+           <tr>
+              <br>
+              <br>
+              <br>
+               <th>Description</th>
+               <th>Qty</th>
+               <th>Unit Price</th>
+               <th>Amount</th>
+           </tr>
+          </thead>
+
+          <tbody id="tableData"></tbody>
+
+          </table>
+
+</body>
+<style>
+
+        .text{
+            position: absolute;
+            left:2%;
+            top: 7%;
+            text-align: left;
+        }
+
+        
+        .text2{
+            position: absolute;
+            right:3%;
+            top: 7%;
+            text-align: right;
+        }
+    
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%
+    }
+
+    td, th{
+        border: 1px solid #cccccc;
+        padding: 8px;
+    }
+
+    th{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    tr:nth-child(even){
+        background-color: #dddddd;
+    }
+
+    tr:hover{
+        background-color: black;
+        color: white;
+    }
+</style>
+<script>
+    let sortDirection = false;
+    let invoiceData = [
+                        {description:"Mouse",Qty:3,unitPrice:200,Amount:600},
+                        {description:"Keyboard",Qty:3,unitPrice:400,Amount:1200},
+                        {description:"Monitor",Qty:6,unitPrice:5400,Amount:32400},
+                        {description:"CPU Tower Case",Qty:3,unitPrice:1200,Amount:3600},
+                        {description:"Headset",Qty:3,unitPrice:500,Amount:1500},
+                        {description:"UPS",Qty:1,unitPrice:4000,Amount:4000},
+                    ];
+
+                    window.onload = () => {
+                        loadTableData(invoiceData);
+                    };
+
+                    function loadTableData(invoiceData) {
+                        const tableBody = document.getElementById('tableData');
+                        let dataHtml = '';
+
+                        for(let invoice of invoiceData) {
+                            dataHtml += `<tr><td>${invoice.description}</td><td>${invoice.Qty}</td><td>${invoice.unitPrice}</td><td>${invoice.Amount}</td></tr>`;
+                
+                        }
+                        console.log(dataHtml)
+
+                        tableBody.innerHTML = dataHtml;
+                    }
+
+</script>
+
+
+
+</html>
